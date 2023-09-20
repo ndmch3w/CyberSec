@@ -16,3 +16,6 @@
 - Other flags:
   ![image](https://github.com/ndmch3w/CyberSec/assets/130122471/fa120fd3-0b53-4c66-8cea-e31184947bcc)
 - Example cmd: "gobuster dns -d mydomain.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt"
+
+# Virtual hosts (vhost mode)
+- Example cmd: "gobuster -u example.com -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt"
