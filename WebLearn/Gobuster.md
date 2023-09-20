@@ -5,4 +5,4 @@
 - "-u": for URL
 - "-w": for wordlist path
 - Example command:
-    gobuster dir -u http://10.10.10.10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+    "gobuster dir -u http://10.10.10.10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
