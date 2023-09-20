@@ -5,8 +5,7 @@
 - "-u": for URL
 - "-w": for wordlist path
 - Example command:
-    "gobuster dir -u http://10.10.10.10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+  "gobuster dir -u http://10.10.10.10 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
 - Other flags -> add after "-w"
-    ![image](https://github.com/ndmch3w/CyberSec/assets/130122471/5a5d057c-c7f0-48f5-9b90-fd2d401834b1)
-  
-    "gobuster dir -u https://example.com -w /path/to/wordlist.txt -c "sessionid=abc123; username=admin" -t 50"
+  + ![image](https://github.com/ndmch3w/CyberSec/assets/130122471/5a5d057c-c7f0-48f5-9b90-fd2d401834b1) 
+  + "gobuster dir -u https://example.com -w /path/to/wordlist.txt -c "sessionid=abc123; username=admin" -t 50"
