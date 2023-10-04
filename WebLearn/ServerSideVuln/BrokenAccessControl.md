@@ -25,3 +25,6 @@ https://insecure-website.com/myaccount?id=123
 
 ## 3. Data leaked in redirect
 Use "Network" in Mozilla's Inspect tab to see
+
+# III. Server-side request forgery (SSRF)
+Server-side request forgery is a web security vulnerability that allows an attacker to cause the server-side application to make requests to an unintended location.
