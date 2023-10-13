@@ -16,4 +16,5 @@ A web shell is a malicious script that enables an attacker to execute arbitrary 
 
 # 2. Exploiting flawed validation of file uploads
 # 2.1. Flawed file type validation
-One way that websites may attempt to validate file uploads is to check that this input-specific Content-Type header matches an expected MIME type. If the server is only expecting image files, for example, it may only allow types like image/jpeg and image/png. Problems can arise when the value of this header is implicitly trusted by the server. If no further validation is performed to check whether the contents of the file actually match the supposed MIME type, this defense can be easily bypassed using tools like Burp Repeater.
+Modify "content-type" header of each part of "multipart/form-data" -> Use Burp Repeater -> Observe
+
