@@ -4,3 +4,5 @@ If given var/www/html/images
 - -> Or var/www/html/images/../../../etc/passwd
 
 # 2. Traversal blocked with absolute path bypass
+If given var/www/images/?filename=a.jpg
+- ->Use absolute path var/www/images/?filename=/etc/passwd
