@@ -11,7 +11,7 @@ If given var/www/images/?filename=a.jpg
 Use nested traversal, e.g."....//" when server block "../"
 -  ->e.g. GET /image/?filename=....//....//....//etc/passwd
 
-# 4. Traversal sequence stripped (bypass by nested URL encode)
+# 4. Traversal sequence stripped with URL decode (bypass by double URL encode)
 URL encode or double URL encode for:
 - URL path
 - filename param in multipart/form-data request
