@@ -15,3 +15,10 @@ Use nested traversal, e.g."....//" when server block "../"
 URL encode or double URL encode for:
 - URL path
 - filename param in multipart/form-data request
+
+# 5. Start-of-path validation
+An application may require the user-supplied filename to start with the expected base folder, such as "/var/www/images"
+- -> Include that path in parameter
+
+# 6. File extension validation
+Bypass with null byte "%00" to terminate filepath before extension. Example: filename%00.png
