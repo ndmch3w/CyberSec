@@ -11,7 +11,11 @@ Some applications determine the user's access rights or role at login, and then 
   - A hidden field.
   - A cookie.
   - A preset query string parameter.
-
+### 2.1. User role controlled by request parameter
+- https://insecure-website.com/login/home.jsp?admin=true
+- https://insecure-website.com/login/home.jsp?role=1
+### 2.2. User role controlled by user profile
+Maybe read and change the data with Burp Repeater if we have change pass, email, .....?
 
 # II. Horizontal privilege escalation
 Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation.
