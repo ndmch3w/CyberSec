@@ -23,7 +23,8 @@ For example, an application might configure a rule as follows: DENY: POST, /admi
 - -> "X-Original-URL" and "X-Rewrite-URL" headers to point to URL target from any front-end URL maybe?
 
 ## 4. Method-based BAC
-In this case, front-end controls still restrict access to specific URLs, maybe we can use another request methods??? (GET, POST, UPDATE, ....)
+- In this case, front-end controls still restrict access to specific URLs, maybe we can use another request methods??? (GET, POST, UPDATE, ....)
+- Remember that the position of parameters in GET and POST are different!!!!
 
 # II. Horizontal privilege escalation
 Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation.
