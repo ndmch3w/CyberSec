@@ -35,17 +35,17 @@ Sometimes we modify a bit in the URL endpoints but still get to the same place:
 # II. Horizontal privilege escalation
 Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation.
 
-## 1. IDOR
-- https://insecure-website.com/myaccount?id=123
-- Not only directly on URL, can be anywhere (filesystem, upload, download, ....)
-
-## 2. Globally unique identifiers (GUIDs)
+## 1. Globally unique identifiers (GUIDs)
 - In some applications, the exploitable parameter does not have a predictable value.
 - However, the GUIDs belonging to other users might be disclosed elsewhere in the application where users are referenced, such as "user messages" or "reviews".
 
-## 3. Data leaked in redirect
+## 2. Data leaked in redirect
 - Use "Network" in Mozilla's Inspect tab to see.
 - Use HTTP History in Burp to see if there is anything special in responses when you are being redirected.
 
-# III. Server-side request forgery (SSRF)
+### III. IDOR
+- https://insecure-website.com/myaccount?id=123
+- Not only directly on URL, can be anywhere (filesystem, upload, download, ....)
+
+# IV. Server-side request forgery (SSRF)
 Server-side request forgery is a web security vulnerability that allows an attacker to cause the server-side application to make requests to an unintended location.
