@@ -47,5 +47,5 @@ Horizontal privilege escalation occurs if a user is able to gain access to resou
 - https://insecure-website.com/myaccount?id=123
 - Not only directly on URL, can be anywhere (filesystem, upload, download, ....)
 
-# IV. Server-side request forgery (SSRF)
-Server-side request forgery is a web security vulnerability that allows an attacker to cause the server-side application to make requests to an unintended location.
+# IV. Multistep process
+Sometimes, the website assumes that a user will only reach step 3 if they have already completed the first steps, which are properly controlled. An attacker can gain unauthorized access to the function by skipping the first two steps and directly submitting the request for the third step with the required parameters.
