@@ -43,7 +43,7 @@ Horizontal privilege escalation occurs if a user is able to gain access to resou
 - Use "Network" in Mozilla's Inspect tab to see.
 - Use HTTP History in Burp to see if there is anything special in responses when you are being redirected.
 
-### III. IDOR
+# III. IDOR
 - https://insecure-website.com/myaccount?id=123
 - Not only directly on URL, can be anywhere (filesystem, upload, download, ....)
 
