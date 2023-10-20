@@ -36,7 +36,8 @@ Sometimes we modify a bit in the URL endpoints but still get to the same place:
 Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation.
 
 ## 1. IDOR
-https://insecure-website.com/myaccount?id=123
+- https://insecure-website.com/myaccount?id=123
+- Not only directly on URL, can be anywhere (filesystem, upload, download, ....)
 
 ## 2. Globally unique identifiers (GUIDs)
 - In some applications, the exploitable parameter does not have a predictable value.
