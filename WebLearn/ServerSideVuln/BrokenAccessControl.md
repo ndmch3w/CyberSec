@@ -26,6 +26,12 @@ For example, an application might configure a rule as follows: DENY: POST, /admi
 - In this case, front-end controls still restrict access to specific URLs, maybe we can use another request methods??? (GET, POST, UPDATE, ....)
 - Remember that the position of parameters in GET and POST are different!!!!
 
+## 5. Broken access control resulting from URL-matching discrepancies
+Sometimes we modify a bit in the URL endpoints but still get to the same place:
+- Upper/Lowercase: /ADMIN/DELETEUSER vs /admin/deleteUser
+- Spring framework (<5.3 by default): a request to /admin/deleteUser.anything would still match the /admin/deleteUser pattern
+- Add a slash: /admin/deleteUser and /admin/deleteUser/ are treated as distinct endpoints 
+
 # II. Horizontal privilege escalation
 Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation.
 
@@ -37,7 +43,8 @@ https://insecure-website.com/myaccount?id=123
 - However, the GUIDs belonging to other users might be disclosed elsewhere in the application where users are referenced, such as "user messages" or "reviews".
 
 ## 3. Data leaked in redirect
-Use "Network" in Mozilla's Inspect tab to see
+- Use "Network" in Mozilla's Inspect tab to see.
+- Use HTTP History in Burp to see if there is anything special in responses when you are being redirected.
 
 # III. Server-side request forgery (SSRF)
 Server-side request forgery is a web security vulnerability that allows an attacker to cause the server-side application to make requests to an unintended location.
