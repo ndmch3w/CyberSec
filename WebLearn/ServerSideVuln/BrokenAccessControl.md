@@ -49,3 +49,7 @@ Horizontal privilege escalation occurs if a user is able to gain access to resou
 
 # IV. Multistep process
 Sometimes, the website assumes that a user will only reach step 3 if they have already completed the first steps, which are properly controlled. An attacker can gain unauthorized access to the function by skipping the first two steps and directly submitting the request for the third step with the required parameters.
+
+# V. Referer-based access control
+- Website ensure by referer, e.g. /admin
+- But can bypass with any referer contains "/admin" like "/admin/deleteUser"
